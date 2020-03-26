@@ -1,0 +1,16 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "parcel src/index.html"
+  },
+  "author": "Matan Kushner",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^1.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.5",
+    "parcel-bundler": "^1.12.4"
+  }
+}
