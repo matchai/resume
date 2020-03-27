@@ -1,9 +1,11 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
 const plugin = require("tailwindcss/plugin");
 
 module.exports = {
   theme: {
     screens: {
-      print: { raw: "print" }
+      print: { raw: "print" },
+      ...defaultTheme.screens
     },
     extend: {
       maxWidth: {
@@ -19,19 +21,17 @@ module.exports = {
   },
   plugins: [
     plugin(function({ addUtilities }) {
+      const masonryUtils = {
+        ".flex-col-wrap": {
+          "flex-flow": "column wrap"
+        }
+      }
+
+      addUtilities(masonryUtils, {
+        variants: ["responsive"]
+      });
+
       const columnUtils = {
-        ".col-count-1": {
-          "column-count": "1"
-        },
-        ".col-count-2": {
-          "column-count": "2"
-        },
-        ".col-count-3": {
-          "column-count": "3"
-        },
-        ".col-gap-md": {
-          "column-gap": "2.1875rem"
-        },
         ".hyphens-manual": {
           hyphens: "manual"
         },
@@ -47,12 +47,6 @@ module.exports = {
         ".break-before-avoid": {
           "break-after": "avoid"
         },
-        ".col-fill-auto": {
-          "column-fill": "auto"
-        },
-        ".col-fill-balance": {
-          "column-fill": "balance"
-        }
       };
 
       addUtilities(columnUtils, {

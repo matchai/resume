@@ -6,13 +6,15 @@
     <title>Resume - Matan Kushner</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body class="p-16 mx-auto max-w-letter h-letter">
+  <body class="p-16 mx-auto max-w-letter h-letter flex flex-col">
     <header class="mb-10">
       <h1 class="text-3xl font-light text-gray-800">Matan Kushner</h1>
       <p class="text-gray-600">Developing delightful user experiences ✨</p>
     </header>
-    <main class="col-count-2 col-gap-md">
-      <section>
+    <main class="flex flex-1 lg:flex-col-wrap content-between">
+      <section
+        class="w-full lg:w-1/2 lg:-mx-2 lg:px-2 mb-8 odd:order-1 even:order-2"
+      >
         <h2
           class="text-sm font-bold text-gray-600 mb-2 tracking-wider uppercase"
         >
@@ -26,45 +28,49 @@
           >, open source enthusiast, speaker, mentor, and all-around cool dude.
         </p>
       </section>
-      <section class="mt-8">
-        <div class="break-inside-avoid">
-          <h2
-            class="text-sm font-bold text-gray-600 mb-2 tracking-wider uppercase"
-          >
-            Projects
-          </h2>
-          <article>
-            <h3 class="font-semibold text-gray-800 leading-snug">
-              <a href="https://starship.rs/" target="_blank" class="group">
-                Starship Prompt
-                <span
-                  class="text-gray-500 group-hover:text-gray-700 transition duration-150 ease-in"
-                  >↗</span
-                >
-              </a>
-            </h3>
-            <p class="text-gray-600 text-sm">Since 2018 | Rust</p>
-            <p class="mt-2 text-gray-800">
-              Starship is the blazing-fast, infinitely customizable prompt for
-              any shell. Written in Rust, Starship brings best-in-class speed
-              and safety to make any shell beautiful and snappy.
-            </p>
-            <p class="mt-2 text-gray-800">
-              Starship has had over 100 contributors, 6k GitHub stars,
-              translations in 6 languages and distribution on 10+ registries. 🚀
-            </p>
-          </article>
-        </div>
+      <section
+        class="w-full lg:w-1/2 lg:-mx-2 lg:px-2 mb-8 odd:order-1 even:order-2"
+      >
+        <h2
+          class="text-sm font-bold text-gray-600 mb-2 tracking-wider uppercase"
+        >
+          Projects
+        </h2>
+        <article>
+          <h3 class="font-semibold text-gray-800 leading-snug">
+            <a href="https://starship.rs/" target="_blank" class="group">
+              Starship Prompt
+              <span
+                class="text-gray-500 group-hover:text-gray-700 transition duration-150 ease-in"
+                >↗</span
+              >
+            </a>
+          </h3>
+          <p class="text-gray-600 text-sm">Since 2018 | Rust</p>
+          <p class="mt-2 text-gray-800">
+            Starship is the blazing-fast, infinitely customizable prompt for any
+            shell. Written in Rust, Starship brings best-in-class speed and
+            safety to make any shell beautiful and snappy.
+          </p>
+          <p class="mt-2 text-gray-800">
+            Starship has had over 100 contributors, 6k GitHub stars,
+            translations in 6 languages and distribution on 10+ registries. 🚀
+          </p>
+        </article>
       </section>
 
-      <section>
+      <section
+        class="w-full lg:w-1/2 lg:-mx-2 lg:px-2 mb-8 odd:order-1 even:order-2"
+      >
         <h2
           class="text-sm font-bold text-gray-600 mb-2 tracking-wider uppercase"
         >
           Work
         </h2>
       </section>
-      <section>
+      <section
+        class="w-full lg:w-1/2 lg:-mx-2 lg:px-2 mb-8 odd:order-1 even:order-2"
+      >
         <h2
           class="text-sm font-bold text-gray-600 mb-2 tracking-wider uppercase"
         >

@@ -6,10 +6,23 @@
   body {
     -webkit-print-color-adjust: exact !important;
     color-adjust: exact !important;
-    color: black !important
+    color: black !important;
   }
 
-  h1, h2, h3, p {
+  h1,
+  h2,
+  h3,
+  p {
     color: black !important;
   }
 }
+
+
+main::after {
+  content: "";
+  flex-basis: 100%;
+  order: 1;
+}
+
+section:nth-child(odd) { order: 1; }
+section:nth-child(even) { order: 2; }
