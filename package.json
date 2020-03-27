@@ -6,11 +6,22 @@
   },
   "author": "Matan Kushner",
   "license": "ISC",
-  "dependencies": {
-    "tailwindcss": "^1.2.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^9.7.5",
-    "parcel-bundler": "^1.12.4"
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.9",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.0.2",
+    "tailwindcss": "^1.2.0",
+    "tailwindcss-multi-column": "^1.0.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
   }
 }

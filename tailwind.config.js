@@ -5,53 +5,44 @@ module.exports = {
   theme: {
     screens: {
       print: { raw: "print" },
-      ...defaultTheme.screens
+      ...defaultTheme.screens,
     },
     extend: {
       maxWidth: {
-        letter: "8.5in"
+        letter: "8.5in",
       },
       height: {
-        letter: "11in"
-      }
-    }
+        letter: "11in",
+      },
+    },
   },
   variants: {
-    textColor: ["responsive", "hover", "focus", "group-hover"]
+    textColor: ["responsive", "hover", "focus", "group-hover"],
   },
   plugins: [
-    plugin(function({ addUtilities }) {
-      const masonryUtils = {
-        ".flex-col-wrap": {
-          "flex-flow": "column wrap"
-        }
-      }
-
-      addUtilities(masonryUtils, {
-        variants: ["responsive"]
-      });
-
+    require("tailwindcss-multi-column")(),
+    plugin(function ({ addUtilities }) {
       const columnUtils = {
         ".hyphens-manual": {
-          hyphens: "manual"
+          hyphens: "manual",
         },
         ".break-after-col": {
-          "break-after": "column"
+          "break-after": "column",
         },
         ".break-inside-avoid": {
-          "break-inside": "avoid"
+          "break-inside": "avoid",
         },
         ".break-after-avoid": {
-          "break-after": "avoid"
+          "break-after": "avoid",
         },
         ".break-before-avoid": {
-          "break-after": "avoid"
+          "break-after": "avoid",
         },
       };
 
       addUtilities(columnUtils, {
-        variants: ["responsive"]
+        variants: ["responsive"],
       });
-    })
-  ]
+    }),
+  ],
 };

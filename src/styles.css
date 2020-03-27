@@ -17,12 +17,6 @@
   }
 }
 
-
-main::after {
-  content: "";
-  flex-basis: 100%;
-  order: 1;
+section {
+  break-inside: avoid-column;
 }
-
-section:nth-child(odd) { order: 1; }
-section:nth-child(even) { order: 2; }
