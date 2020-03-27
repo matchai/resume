@@ -1,5 +1,15 @@
 @tailwind base;
-
 @tailwind components;
-
 @tailwind utilities;
+
+@screen print {
+  body {
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
+    color: black !important
+  }
+
+  h1, h2, h3, p {
+    color: black !important;
+  }
+}
