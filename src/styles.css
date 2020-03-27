@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @screen print {
+  /* Hide the print page header and footer */
+  @page {
+    margin: 0;
+  }
+
   body {
     -webkit-print-color-adjust: exact !important;
     color-adjust: exact !important;
@@ -15,8 +20,8 @@
   p {
     color: black !important;
   }
-}
 
-section {
-  break-inside: avoid-column;
+  html {
+    font-size: 13px !important;
+  }
 }

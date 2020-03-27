@@ -18,31 +18,7 @@ module.exports = {
   },
   variants: {
     textColor: ["responsive", "hover", "focus", "group-hover"],
+    translate: ["group-hover"],
   },
-  plugins: [
-    require("tailwindcss-multi-column")(),
-    plugin(function ({ addUtilities }) {
-      const columnUtils = {
-        ".hyphens-manual": {
-          hyphens: "manual",
-        },
-        ".break-after-col": {
-          "break-after": "column",
-        },
-        ".break-inside-avoid": {
-          "break-inside": "avoid",
-        },
-        ".break-after-avoid": {
-          "break-after": "avoid",
-        },
-        ".break-before-avoid": {
-          "break-after": "avoid",
-        },
-      };
-
-      addUtilities(columnUtils, {
-        variants: ["responsive"],
-      });
-    }),
-  ],
+  plugins: [require("tailwindcss-multi-column")()],
 };

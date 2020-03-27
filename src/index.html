@@ -3,64 +3,239 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resume - Matan Kushner</title>
+    <title>Resume – Matan Kushner</title>
+    <link
+      rel="icon"
+      href='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">👋</text></svg>'
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
+
   <body class="p-16 mx-auto max-w-letter h-letter flex flex-col">
-    <header class="mb-10">
+    <header class="mb-8">
       <h1 class="text-3xl font-light text-gray-800">Matan Kushner</h1>
       <p class="text-gray-600">Developing delightful user experiences ✨</p>
     </header>
-    <main class="col-count-2 col-gap-6 col-fill-balance">
+
+    <main class="col-count-2 col-gap-8 col-fill-balance">
       <section class="mb-8">
         <h2
           class="text-sm font-bold text-gray-600 mb-2 tracking-wider uppercase"
         >
           About Me
         </h2>
-        <p class="text-gray-700 font-medium">
+        <p class="text-gray-700">
           Hey there! 👋<br />
           I'm a passionate
-          <em class="not-italic text-black font-semibold"
+          <em class="not-italic text-black font-medium"
             >Developer and UI/UX Designer</em
           >, open source enthusiast, speaker, mentor, and all-around cool dude.
         </p>
       </section>
       <section class="mb-8">
         <h2
-          class="text-sm font-bold text-gray-600 mb-2 tracking-wider uppercase"
+          class="text-sm font-bold text-gray-600 mb-3 tracking-wider uppercase"
         >
           Projects
         </h2>
-        <article>
-          <h3 class="font-semibold text-gray-800 leading-snug">
-            <a href="https://starship.rs/" target="_blank" class="group">
-              Starship Prompt
-              <span
-                class="text-gray-500 group-hover:text-gray-700 transition duration-150 ease-in"
-                >↗</span
+
+        <article class="mb-8">
+          <div class="flex align-center mb-4">
+            <svg
+              class="w-10 mr-3 fill-current text-gray-500 inline-block"
+              viewBox="0 0 40 40"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M20 40c11.046 0 20-8.954 20-20S31.046 0 20 0 0 8.954 0 20c0 6.455 3.058 12.196 7.804 15.852 6.835-.732 9.333-6.116 9.333-6.116l5.377 1.755s-.883 5.287-4.248 8.435c.572.049 1.15.074 1.734.074zM7.611 11.01c1.946.376 3.05 1.529 3.385 3.386-.034-1.923 1.11-3.043 3.386-3.387-2.052-.216-3.142-1.385-3.386-3.386-.235 1.932-1.284 3.135-3.385 3.386zm17.204 14.415l-.738 1.97-6.062-1.77.613-2.112-4.631-1.84c1.476-1.803 2.953-2.69 5.244-3.815-.204-3.542 2.655-6.08 6.061-8.58 2.707 3.322 3.906 6.271 2.055 10.41 1.533 1.66 2.19 4.33 2.166 6.823l-4.708-1.086zm1.053-9.393a1.762 1.762 0 11-3.524 0 1.762 1.762 0 013.524 0z"
+              />
+            </svg>
+            <div>
+              <h3 class="font-semibold text-gray-800 leading-snug">
+                <a href="https://starship.rs/" target="_blank" class="group">
+                  Starship Prompt
+                  <span
+                    class="inline-block text-gray-500 group-hover:text-gray-700 transition duration-150 ease-in"
+                    >↗</span
+                  >
+                </a>
+              </h3>
+              <p class="text-gray-600 text-sm">
+                Since 2019 | Rust
+              </p>
+            </div>
+          </div>
+          <ul>
+            <li class="mt-3 ml-4 text-gray-800">
+              <span class="text-gray-600 font-bold absolute -ml-4 select-none"
+                >›</span
               >
-            </a>
-          </h3>
-          <p class="text-gray-600 text-sm">Since 2018 | Rust</p>
-          <p class="mt-2 text-gray-800">
-            Starship is the blazing-fast, infinitely customizable prompt for any
-            shell. Written in Rust, Starship brings best-in-class speed and
-            safety to make any shell beautiful and snappy.
-          </p>
-          <p class="mt-2 text-gray-800">
-            Starship has had over 100 contributors, 6k GitHub stars,
-            translations in 6 languages and distribution on 10+ registries. 🚀
-          </p>
+              Developed a performant cross-platform and cross-shell prompt, for
+              Windows, macOS, and Linux systems
+            </li>
+            <li class="mt-3 ml-4 text-gray-800">
+              <span class="text-gray-600 font-bold absolute -ml-4 select-none"
+                >›</span
+              >
+              Triaged issues and reviewed contributions by 100+ contributors to
+              the Starship codebase
+            </li>
+          </ul>
+        </article>
+
+        <article class="mb-8">
+          <div class="flex align-center mb-4">
+            <svg
+              class="w-10 mr-3 fill-current text-gray-500 inline-block"
+              viewBox="0 0 40 40"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M40 20c0 11.046-8.954 20-20 20S0 31.046 0 20 8.954 0 20 0s20 8.954 20 20zm-14.697-9.723v14.36h7.435c.813 0 1.262.454 1.262 1.277v2.81c0 .822-.449 1.276-1.262 1.276l-6.74-.007L26 30h-5.662l-1.211-3.632H12.93L11.69 30H6l7.324-21h5.38L20 12.73v-2.453C20 9.454 20.449 9 21.263 9h2.777c.814 0 1.263.454 1.263 1.277zM16 15.896l-1.775 5.818h3.719L16 15.896z"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M25.998 29.993L20 12.73v-2.453C20 9.454 20.449 9 21.263 9h2.777c.814 0 1.263.454 1.263 1.277v14.36h7.435c.813 0 1.262.454 1.262 1.277v2.81c0 .822-.449 1.276-1.262 1.276l-6.74-.007z"
+                fill-opacity=".4"
+              />
+            </svg>
+            <div>
+              <h3 class="font-semibold text-gray-800 leading-snug">
+                <a href="https://starship.rs/" target="_blank" class="group">
+                  AniList / AniChart
+                  <span
+                    class="inline-block text-gray-500 group-hover:text-gray-700 transition duration-150 ease-in"
+                    >↗</span
+                  >
+                </a>
+              </h3>
+              <p class="text-gray-600 text-sm">
+                Since 2013 | JavaScript, TypeScript, Vue
+              </p>
+            </div>
+          </div>
+          <ul>
+            <li class="mt-3 ml-4 text-gray-800">
+              <span class="text-gray-600 font-bold absolute -ml-4 select-none"
+                >›</span
+              >
+              Designed and developed features for social cataloging and social
+              networking
+            </li>
+            <li class="mt-3 ml-4 text-gray-800">
+              <span class="text-gray-600 font-bold absolute -ml-4 select-none"
+                >›</span
+              >
+              Organically grew network of users to 50k+ daily active users and
+              500k+ registered users
+            </li>
+          </ul>
         </article>
       </section>
 
       <section class="mb-8">
         <h2
-          class="text-sm font-bold text-gray-600 mb-2 tracking-wider uppercase"
+          class="text-sm font-bold text-gray-600 mb-3 tracking-wider uppercase"
         >
           Experience
         </h2>
+
+        <article class="mb-8">
+          <div class="flex align-center mb-4">
+            <svg
+              class="w-10 mr-3 fill-current text-gray-500 inline-block"
+              viewBox="0 0 40 40"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M20 40c11.046 0 20-8.954 20-20S31.046 0 20 0 0 8.954 0 20s8.954 20 20 20zm7.31-29.536l2.267 6.954h-7.318l-2.266-6.954h7.318zm-1.403 18.212a10.075 10.075 0 003.67-11.258l-5.925 4.304 2.255 6.954zm-11.824-.003l-.005.003 5.915 4.304 5.914-4.304-5.914-4.303-5.901 4.293 2.252-6.944-5.915-4.304h7.318l2.246-6.954h-7.308l-2.256 6.954a10.06 10.06 0 003.654 11.255z"
+              />
+            </svg>
+            <div>
+              <h3 class="font-semibold text-gray-800 leading-snug">
+                <a href="https://auth0.com/" target="_blank" class="group">
+                  Auth0
+                  <span
+                    class="inline-block text-gray-500 group-hover:text-gray-700 transition duration-150 ease-in"
+                    >↗</span
+                  >
+                </a>
+              </h3>
+              <p class="text-gray-600 text-sm">
+                Since 2019 | Senior Software Engineer
+              </p>
+            </div>
+          </div>
+          <ul>
+            <li class="mt-3 ml-4 text-gray-800">
+              <span class="text-gray-600 font-bold absolute -ml-4 select-none"
+                >›</span
+              >
+              Designing and developing an on-demand API load testing and
+              reporting platform
+            </li>
+
+            <li class="mt-3 ml-4 text-gray-800">
+              <span class="text-gray-600 font-bold absolute -ml-4 select-none"
+                >›</span
+              >
+              Driving adoption of tools, frameworks, and best practices for
+              testability and code quality
+            </li>
+          </ul>
+        </article>
+
+        <article class="mb-8">
+          <div class="flex align-center mb-4">
+            <svg
+              class="w-10 mr-3 fill-current text-gray-500 inline-block"
+              viewBox="0 0 40 40"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M20 40c11.046 0 20-8.954 20-20S31.046 0 20 0 0 8.954 0 20s8.954 20 20 20zm7.31-29.536l2.267 6.954h-7.318l-2.266-6.954h7.318zm-1.403 18.212a10.075 10.075 0 003.67-11.258l-5.925 4.304 2.255 6.954zm-11.824-.003l-.005.003 5.915 4.304 5.914-4.304-5.914-4.303-5.901 4.293 2.252-6.944-5.915-4.304h7.318l2.246-6.954h-7.308l-2.256 6.954a10.06 10.06 0 003.654 11.255z"
+              />
+            </svg>
+            <div>
+              <h3 class="font-semibold text-gray-800 leading-snug">
+                <a href="https://auth0.com/" target="_blank" class="group">
+                  Auth0
+                  <span
+                    class="inline-block text-gray-500 group-hover:text-gray-700 transition duration-150 ease-in"
+                    >↗</span
+                  >
+                </a>
+              </h3>
+              <p class="text-gray-600 text-sm">
+                Since 2019 | Senior Software Engineer
+              </p>
+            </div>
+          </div>
+          <ul>
+            <li class="mt-3 ml-4 text-gray-800">
+              <span class="text-gray-600 font-bold absolute -ml-4 select-none"
+                >›</span
+              >
+              Designing and developing an on-demand API load testing and
+              reporting platform
+            </li>
+
+            <li class="mt-3 ml-4 text-gray-800">
+              <span class="text-gray-600 font-bold absolute -ml-4 select-none"
+                >›</span
+              >
+              Driving adoption of tools, frameworks, and best practices for
+              testability and code quality
+            </li>
+          </ul>
+        </article>
       </section>
       <section class="mb-8">
         <h2
