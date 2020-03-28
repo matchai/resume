@@ -18,7 +18,6 @@ module.exports = {
   },
   variants: {
     textColor: ["responsive", "hover", "focus", "group-hover"],
-    translate: ["group-hover"],
   },
   plugins: [require("tailwindcss-multi-column")()],
 };
