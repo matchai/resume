@@ -2,6 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+@variants group-hover {
+  .delay-0 {
+    transition-delay: 0ms;
+  }
+
+  .delay-100 {
+    transition-delay: 100ms;
+  }
+
+  .delay-250 {
+    transition-delay: 250ms;
+  }
+
+  .delay-500 {
+    transition-delay: 500ms;
+  }
+
+  .delay-750 {
+    transition-delay: 750ms;
+  }
+
+  .delay-1000 {
+    transition-delay: 1000ms;
+  }
+}
+
 @screen print {
   /* Hide the print page header and footer */
   @page {
