@@ -28,6 +28,10 @@
   }
 }
 
+.break-inside-avoid {
+  break-inside: avoid;
+}
+
 @screen print {
   /* Hide the print page header and footer */
   @page {
@@ -38,16 +42,19 @@
     -webkit-print-color-adjust: exact !important;
     color-adjust: exact !important;
     color: black !important;
+
+    padding: 4rem !important;
   }
 
   h1,
   h2,
   h3,
-  p {
+  p,
+  svg {
     color: black !important;
   }
 
   html {
-    font-size: 13px !important;
+    font-size: 12.288px !important;
   }
 }

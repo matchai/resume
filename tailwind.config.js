@@ -9,7 +9,7 @@ module.exports = {
     },
     extend: {
       maxWidth: {
-        letter: "8.5in",
+        letter: "66rem",
       },
       height: {
         letter: "11in",
